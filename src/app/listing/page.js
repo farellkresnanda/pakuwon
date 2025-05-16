@@ -59,7 +59,7 @@ Berlokasi strategis di pusat Bekasi dengan koneksi tol, LRT, dan KCIC, ketiga to
           {/* Image */}
           <div className="w-full max-w-[550px]"data-aos= "fade-left">
             <Image
-              src="/tower_amor.svg"
+              src="/amor.jpeg"
               width={1500}
               height={500}
               alt="City Night"

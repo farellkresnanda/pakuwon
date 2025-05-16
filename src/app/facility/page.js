@@ -12,13 +12,16 @@ export default function Home() {
 
       {/* Hero Image */}
       <div className="pt-[10px] overflow-hidden rounded-lg md:rounded-r-lg md:rounded-l-none px-4 md:px-8 lg:px-[120px]" data-aos="fade-right">
-        <Image
-          src="/drone/IMG_20250115_221702.jpg"
-          alt="tes"
-          width={1400}
-          height={400}
-          className="w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover border-[5px] border-[#F9F8EB] rounded-lg md:rounded-r-lg"
-        />
+        <div className="w-full h-[250px] md:h-[350px] lg:h-[450px] border-[5px] border-[#F9F8EB] rounded-lg md:rounded-r-lg overflow-hidden">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUTUBE_VIDEO_ID"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
 
       {/* Title */}
