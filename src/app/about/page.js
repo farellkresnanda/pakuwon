@@ -10,19 +10,17 @@ export default function Home() {
     <div className="bg-[#F9F8EB] font-poppins">
       <Navbar/>
       <section className="px-[120px] pt-[20px]" data-aos="fade-right" id="pakuwon_bekasi">
-        <p className="text-[#918D8C] font-medium" >About Us</p>
+        <p className="text-[#918D8C] font-medium" >Tentang Kami</p>
       </section>
       <div className="px-[120px] pt-[20px]" data-aos="fade-right">
-        <p className="text-[#000000] font-medium text-[50px]">About <span className="text-[#B68383]">Pakuwon</span></p>
+        <p className="text-[#000000] font-medium text-[50px]">Together <span className="text-[#B68383]">We Grow</span></p>
       </div>
       <div className="px-[120px] pt-[20px] max-w-[1200px]" data-aos="fade-right">
-        <p className="text-[#918D8C] font-medium text-[16px]">Pakuwon Jati Tbk adalah salah satu pengembang properti terbesar dan paling berpengalaman di Indonesia, berdiri sejak tahun 1982 dan menjadi perusahaan properti pertama yang tercatat di Bursa Efek Indonesia pada tahun 1989.
-
-Pakuwon dikenal sebagai pelopor konsep superblock (mixed-use development) di Indonesia, yaitu pengembangan kawasan terpadu yang mencakup pusat perbelanjaan, apartemen, perkantoran, dan hotel dalam satu area.</p>
+        <p className="text-[#918D8C] font-medium text-[16px]">Pakuwon Group didirikan pada 1982 dan telah tercatat di Bursa Efek sejak 1989. Berfokus di Jakarta dan Surabaya, Pakuwon mengembangkan properti ritel, residensial, komersial, dan perhotelan secara terintegrasi, dari akuisisi lahan hingga manajemen operasional. Pakuwon juga pelopor konsep Superblock di Indonesia—pengembangan terpadu yang mencakup mal, kantor, apartemen, dan hotel. Reputasi yang kuat menjadikannya mitra tepercaya bagi penyewa dan pembeli, serta mendorong ekspansi bisnis yang berkelanjutan.</p>
       </div>
       <div className="px-[120px] pt-[50px]" data-aos="fade-up">
         <Image
-            src="test/Team meeting at office.svg"
+            src="/award/awarding.jpg"
             alt="tes"
             width={1400}
             height={500}
@@ -59,7 +57,7 @@ Pakuwon dikenal sebagai pelopor konsep superblock (mixed-use development) di Ind
 
       {/* Section bawah */}
       <div className="w-full -mt-[550px] pb-20 px-10 flex flex-col items-center">
-        <h2 className="text-lg font-bold mt-40 mb-10" data-aos="fade-up">OUR PROPERTY</h2>
+        <h2 className="text-lg font-bold mt-40 mb-10" data-aos="fade-up">PROPERTI KAMI</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[20px]">
           {/* Property 1 */}
           <div className="max-w-[350px]  text-center" data-aos="fade-right">
@@ -79,7 +77,7 @@ Pakuwon dikenal sebagai pelopor konsep superblock (mixed-use development) di Ind
           <div className="max-w-[350px] text-center" data-aos="fade-left">
             <img src="/tower_dolce.jpg" alt="Kota Kasablanka" className="rounded-2xl shadow-lg h-[600px] object-cover" />
             <h3 className="mt-4 font-semibold text-black text-[18px]">Kota Kasablanka</h3>
-            <p className="text-[15px] text-gray-600">hopping mall | Kantor</p>
+            <p className="text-[15px] text-gray-600">Shopping mall | Kantor</p>
           </div>
         </div>
       </div>

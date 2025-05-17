@@ -39,19 +39,19 @@ Berlokasi strategis di pusat Bekasi dengan koneksi tol, LRT, dan KCIC, ketiga to
 
               <div className="flex items-center space-x-2">
                 <Image src="/logo/pool.svg" width={30} height={30} alt="Swimming Pool" />
-                <p className="font-semibold text-[#999999]">Swimming Pool</p>
+                <p className="font-semibold text-[#999999]">Kolam Renang</p>
               </div>
 
               <div className="flex items-center space-x-2">
                 <Image src="/logo/lounge.svg" width={30} height={30} alt="Lobby Lounge" />
-                <p className="font-semibold text-[#999999]">Lobby Lounge</p>
+                <p className="font-semibold text-[#999999]">Lobby</p>
               </div>
             </div>
 
             {/* Button */}
             <div className="mt-8 lg:mt-[50px]" >
               <button className="border-2 border-gray-300 text-white text-[13px] px-4 py-2 rounded-[15px] transition duration-300 hover:bg-white hover:text-black">
-                <Link href="/listing/amor/1bedroom">Learn more</Link>
+                <Link href="/listing/amor/1bedroom">Lihat Detail</Link>
               </button>
             </div>
           </div>
@@ -88,19 +88,19 @@ Berlokasi strategis di pusat Bekasi dengan koneksi tol, LRT, dan KCIC, ketiga to
 
               <div className="flex items-center space-x-2">
                 <Image src="/logo/pool.svg" width={30} height={30} alt="Swimming Pool" />
-                <p className="font-semibold text-[#999999]">Swimming Pool</p>
+                <p className="font-semibold text-[#999999]">Kolam Renang</p>
               </div>
 
               <div className="flex items-center space-x-2">
                 <Image src="/logo/lounge.svg" width={30} height={30} alt="Lobby Lounge" />
-                <p className="font-semibold text-[#999999]">Lobby Lounge</p>
+                <p className="font-semibold text-[#999999]">Lobby</p>
               </div>
             </div>
 
             {/* Button */}
             <div className="mt-8 lg:mt-[50px]">
               <button className="border-2 border-gray-300 text-white text-[13px] px-4 py-2 rounded-[15px] transition duration-300 hover:bg-white hover:text-black">
-                <Link href="/listing/bella/1bedroom">Learn more</Link>
+                <Link href="/listing/bella/1bedroom">Lihat Detail</Link>
               </button>
             </div>
           </div>
@@ -136,19 +136,19 @@ Berlokasi strategis di pusat Bekasi dengan koneksi tol, LRT, dan KCIC, ketiga to
 
               <div className="flex items-center space-x-2">
                 <Image src="/logo/pool.svg" width={30} height={30} alt="Swimming Pool" />
-                <p className="font-semibold text-[#999999]">Swimming Pool</p>
+                <p className="font-semibold text-[#999999]">Kolam Renang</p>
               </div>
 
               <div className="flex items-center space-x-2">
                 <Image src="/logo/lounge.svg" width={30} height={30} alt="Lobby Lounge" />
-                <p className="font-semibold text-[#999999]">Lobby Lounge</p>
+                <p className="font-semibold text-[#999999]">Lobby</p>
               </div>
             </div>
 
             {/* Button */}
             <div className="mt-8 lg:mt-[50px]">
               <button className="border-2 border-gray-300 text-white text-[13px] px-4 py-2 rounded-[15px] transition duration-300 hover:bg-white hover:text-black">
-                <Link href="/listing/dolce/1bedroom">Learn more</Link>
+                <Link href="/listing/dolce/1bedroom">Lihat Detail</Link>
               </button>
             </div>
           </div>

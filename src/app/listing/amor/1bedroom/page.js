@@ -31,7 +31,7 @@ export default function Home() {
               Amor 1 Bedroom
             </h1>
             <h1 className="text-black text-[23px] font-semibold pb-[20px]">
-              Rp 850 - 970 Juta
+              Rp 900 Juta - 1 M
             </h1>
             <table className="w-full text-left text-gray-700">
               <tbody>

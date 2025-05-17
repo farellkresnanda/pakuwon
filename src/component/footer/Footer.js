@@ -4,7 +4,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Location Section */}
           <div>
-            <h3 className="text-lg font-semibold">Location</h3>
+            <h3 className="text-lg font-semibold">Lokasi</h3>
             <div className="w-full h-[170px] bg-gray-700 mt-4 mb-2">
               <iframe
                 className="w-full h-full"
@@ -26,12 +26,12 @@ const Footer = () => {
               <ul className="text-gray-400 text-sm space-y-2 mt-2">
                 <li>
                   <a href="http://localhost:3000/home#offers" className="hover:text-white">
-                    Offers
+                    Penawaran
                   </a>
                 </li>
                 <li>
                   <a href="http://localhost:3000/home#why" className="hover:text-white">
-                    why
+                    Kenapa
                   </a>
                 </li>
               </ul>
@@ -57,7 +57,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold w-[90px]">About Us</h3>
+              <h3 className="text-lg font-semibold w-[140px]">Tentang Kami</h3>
               <ul className="text-gray-400 text-sm space-y-2 mt-2">
                 <li>
                   <a href="http://localhost:3000/about#pakuwon" className="hover:text-white">
@@ -75,7 +75,7 @@ const Footer = () => {
 
   
           {/* Contact Section */}
-          <div className="text-gray-400 text-sm space-y-2 pl-[150px]">
+          <div className="text-gray-400 text-sm space-y-2 pl-[170px]">
             <p><span className="font-semibold text-white">Mobile:</span> +62 811-1168-127</p>
             <p><span className="font-semibold text-white">Phone:</span> 08123456781</p>
             <p><span className="font-semibold text-white">Email:</span> fastdf@gmail.com</p>

@@ -18,7 +18,7 @@ const contentMap = {
     floor: "Lantai 5",
   },
   "Kolam Renang": {
-    images: ["/pool/2.svg", "/pool/1.svg", "/pool/3.svg", "/pool/4.svg", "/pool/5.svg"],
+    images: ["/pool/2.svg", "/pool/1.svg", "/pool/3.svg", "/pool/4.jpg", "/pool/5.jpg"],
     description: "Kolam renang indoor dan outdoor untuk kenyamanan Anda.",
     floor: "Lantai 1",
   },
@@ -46,13 +46,11 @@ export default function FacilityGallery() {
   return (
     <section className="p-6 max-w-6xl mx-auto px-4">
       {/* Menu Navigasi */}
-      <div className="flex flex-wrap gap-4 mb-6 justify-center">
+      <div className="flex flex-wrap gap-4 mb-6 justify-center" data-aos="fade-left">
           {menuItems.map((item, index) => (
         <button
           key={item}
           onClick={() => setActiveMenu(item)}
-          data-aos="fade-left"
-          data-aos-delay={`${index * 100}`} // delay bertahap 0ms, 100ms, 200ms, dst
           className={`px-4 py-2 rounded-full border-2 transition-all duration-300 ${
             activeMenu === item
               ? "bg-black text-white border-black"
@@ -113,12 +111,6 @@ export default function FacilityGallery() {
         </div>
       </div>
 
-      {/* Deskripsi */}
-      <div className="bg-[#aab6b6]/30 mt-6 p-6 rounded">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">{activeMenu}</h2>
-        <p className="text-gray-700 mb-2">{content.description}</p>
-        <p className="text-right text-gray-600 mt-4">{content.floor}</p>
-      </div>
     </section>
   );
 }

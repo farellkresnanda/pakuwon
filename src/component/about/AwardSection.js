@@ -1,7 +1,7 @@
 export function AwardCard({ img, title, subtitle }) {
     return (
       <div className="text-center max-w-xs">
-        {img && <img src={img} alt="award" className="w-24 h-24 mx-auto" />}
+        {img && <img src={img} alt="award" className="w-35 h-35 mx-auto" />}
         <h3 className="mt-4 font-semibold text-lg">{title}</h3>
         {subtitle && <p className="text-gray-600 mt-2 text-sm w-[200px]">{subtitle}</p>}
       </div>
@@ -11,20 +11,20 @@ export function AwardCard({ img, title, subtitle }) {
   export default function AwardsSection() {
     const awards = [
       {
-        img: "/images/award1.png", // Ganti dengan path gambar yang sesuai
-        subtitle: "Southeast Asia Best Managed Companies Indonesia Deloitte",
+        img: "/award/highendcondo.png", // Ganti dengan path gambar yang sesuai
+        subtitle: "Best High End Condo Development Jakarta",
       },
       {
-        img: "/images/award2.png", // Ganti dengan path gambar yang sesuai
-        subtitle: "Top 50 Best Companies Forbes Indonesia",
+        img: "/award/Bestretail.png", // Ganti dengan path gambar yang sesuai
+        subtitle: "Best Retail Development",
       },
       {
-        img: "/images/award3.png", // Ganti dengan path gambar yang sesuai
-        subtitle: "Best Mixed-use Development (Pakuwon Mall Superblock) PropertyGuru Group",
+        img: "/award/The Prospective Housing Development.png", // Ganti dengan path gambar yang sesuai
+        subtitle: "The Prospective Housing Development",
       },
       {
-        img: "/images/award3.png", // Kosong karena hanya teks
-        subtitle: "Rekam Jejak Pertumbuhan",
+        img: "/award/Top Property.png", // Kosong karena hanya teks
+        subtitle: "Top Property Achievement Pakuwon City",
       },
     ];
   

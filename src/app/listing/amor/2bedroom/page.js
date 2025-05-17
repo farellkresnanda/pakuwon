@@ -29,7 +29,7 @@ export default function Home() {
 
           <div className="w-full md:w-1/2 pt-5 md:pt-0">
             <h2 className="text-black text-[23px] font-semibold pb-4">Amor 2 Bedroom</h2>
-            <h2 className="text-black text-[23px] font-semibold pb-6">Rp 1,6 - 1,9 Miliar</h2>
+            <h2 className="text-black text-[23px] font-semibold pb-6">Rp 1,7 - 2,9 Miliar</h2>
 
             <table className="w-full text-left text-gray-700">
               <tbody>
