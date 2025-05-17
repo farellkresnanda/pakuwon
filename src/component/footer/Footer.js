@@ -76,7 +76,7 @@ const Footer = () => {
   
           {/* Contact Section */}
           <div className="text-gray-400 text-sm space-y-2 pl-[150px]">
-            <p><span className="font-semibold text-white">Mobile:</span> 0213456781</p>
+            <p><span className="font-semibold text-white">Mobile:</span> +62 811-1168-127</p>
             <p><span className="font-semibold text-white">Phone:</span> 08123456781</p>
             <p><span className="font-semibold text-white">Email:</span> fastdf@gmail.com</p>
           </div>

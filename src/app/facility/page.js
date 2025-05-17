@@ -14,8 +14,8 @@ export default function Home() {
       <div className="pt-[10px] overflow-hidden rounded-lg md:rounded-r-lg md:rounded-l-none px-4 md:px-8 lg:px-[120px]" data-aos="fade-right">
         <div className="w-full h-[250px] md:h-[350px] lg:h-[450px] border-[5px] border-[#F9F8EB] rounded-lg md:rounded-r-lg overflow-hidden">
           <iframe
-            className="w-full h-full"
-            src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUTUBE_VIDEO_ID"
+            className="w-full h-full pointer-events-none"
+            src="https://www.youtube.com/embed/8f2XT2m5Z-0?autoplay=1&mute=1&loop=1&playlist=8f2XT2m5Z-0&controls=0&modestbranding=1&rel=0"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

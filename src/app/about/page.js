@@ -16,7 +16,9 @@ export default function Home() {
         <p className="text-[#000000] font-medium text-[50px]">About <span className="text-[#B68383]">Pakuwon</span></p>
       </div>
       <div className="px-[120px] pt-[20px] max-w-[1200px]" data-aos="fade-right">
-        <p className="text-[#918D8C] font-medium text-[16px]">Perhatikan lokasi, harga, legalitas, fasilitas, dan reputasi developer. Pastikan apartemen berada di lokasi strategis dan dekat dengan fasilitas umum seperti transportasi. Perhatikan lokasi, harga, legalitas, fasilitas, dan reputasi developer. Pastikan apartemen berada di lokasi strategis dan dekat dengan fasilitas umum seperti transportasi.</p>
+        <p className="text-[#918D8C] font-medium text-[16px]">Pakuwon Jati Tbk adalah salah satu pengembang properti terbesar dan paling berpengalaman di Indonesia, berdiri sejak tahun 1982 dan menjadi perusahaan properti pertama yang tercatat di Bursa Efek Indonesia pada tahun 1989.
+
+Pakuwon dikenal sebagai pelopor konsep superblock (mixed-use development) di Indonesia, yaitu pengembangan kawasan terpadu yang mencakup pusat perbelanjaan, apartemen, perkantoran, dan hotel dalam satu area.</p>
       </div>
       <div className="px-[120px] pt-[50px]" data-aos="fade-up">
         <Image

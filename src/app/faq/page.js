@@ -17,9 +17,15 @@ export default function Home() {
             Tidak menemukan jawaban yang Anda cari? Hubungi kami
           </p>
         </div>
-        <button className="bg-[#F9F8F1] text-black text-[15px] font-medium px-6 py-2 rounded-full shadow-md hover:bg-[#F0EDE5] transition">
-          Hubungi Kami
-        </button>
+        <a
+          href="https://wa.me/628111168127"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-[#F9F8F1] text-black text-[15px] font-medium px-6 py-2 rounded-full shadow-md hover:bg-[#F0EDE5] transition">
+            Hubungi Kami
+          </button>
+        </a>
       </div>
 
       <Footer />
