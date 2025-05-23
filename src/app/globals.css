@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "@fontsource/playfair-display";
+@import "@fontsource/playfair-display/700.css";
 
 :root {
   --background: #ffffff;
@@ -24,4 +26,3 @@ body {
   color: var(--foreground);
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
 }
-

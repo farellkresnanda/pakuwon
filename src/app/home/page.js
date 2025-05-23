@@ -48,9 +48,7 @@ export default function Home() {
             </h1>
           </div>
           <div className='flex items-center justify-center pt-[10px] text-center'>
-            <span className="text-[16px] font-light text-black max-w-[750px]">
-            Nikmati berbagai penawaran spesial mulai dari diskon hingga promo eksklusif untuk momen istimewa Anda. Temukan kenyamanan, kemudahan, dan kemewahan dalam satu tempat!
-            </span>
+
           </div>
         </section>
 

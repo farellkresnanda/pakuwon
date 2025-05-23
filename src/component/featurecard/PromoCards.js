@@ -1,53 +1,39 @@
-function PromoCard({ image, title, description }) {
+export default function PromoCardLandscape() {
   return (
-    <div className="w-full max-w-xs rounded-2xl overflow-hidden shadow-lg bg-gray-200 flex flex-col">
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
-      <div className="p-5 flex flex-col flex-grow">
-        <h3 className="text-xl font-semibold mb-3 text-black">{title}</h3>
-        <p className="text-gray-600 text-sm mb-4">{description}</p>
-        <div className="mt-auto">
-          <button className="bg-gray-700 text-white py-2 px-4 rounded-lg text-sm hover:bg-gray-800 transition">
-            ROOM OFFER
-          </button>
-        </div>
+    <div
+      className="flex flex-col md:flex-row items-center justify-between rounded-4xl text-[#F3E392] shadow-2xl overflow-hidden border border-gray-300 max-w-[700px] mx-auto p-8 md:p-10 gap-6 relative bg-cover bg-center font-playfair"
+      style={{
+        backgroundImage: "url('/Shiny Overlay.svg')",
+      }}
+    >
+      {/* Left Side: Text Content */}
+      <div className="text-center md:text-left space-y-4 flex-1">
+        <span className="inline-block bg-[#F5C45E] text-black font-semibold text-xs md:text-sm px-4 py-1 rounded-full shadow-md">
+          Gratis BPHTB
+        </span>
+
+        <p className="text-md md:text-lg font-medium text-white">Sampai Dengan</p>
+
+        <h2 className="text-[42px] md:text-[56px] font-extrabold leading-none text-white">
+          220 <span className="font-light">JUTA</span>
+        </h2>
+
+        <p className="text-sm md:text-base text-white">
+          Cicilan mulai dari <span className="font-extrabold text-[18px] md:text-[22px]">3 Juta-an</span>
+        </p>
       </div>
-    </div>
-  );
-}
 
-export default function PromoCards() {
-  const promotions = [
-    {
-      image: "/city_night.svg",
-      title: "Ramadhan SALE 50%",
-      description:
-        "laoodjiawin kewheih jubjsdh ubajja fjab jb ahbj wdjab jaxnbja djuabaw siualQ FJEW DSJ MAQBD ABBNSJbudghujd u udbbasnnxu",
-    },
-    {
-      image: "/city_night.svg",
-      title: "New Year Offer 25%",
-      description:
-        "laoodjiawin kewheih jubjsdh ubajja fjab jb ahbj wdjab jaxnbja djuabaw siualQ FJEW DSJ MAQBD ABBNSJbudghujd u udbbasnnxu",
-    },
-    {
-      image: "/city_night.svg",
-      title: "Ramadhan SALE 50%",
-      description:
-        "laoodjiawin kewheih jubjsdh ubajja fjab jb ahbj wdjab jaxnbja djuabaw siualQ FJEW DSJ MAQBD ABBNSJbudghujd u udbbasnnxu",
-    },
-  ];
-
-  return (
-    <div className="bg-beige px-4 sm:px-6 lg:px-20 py-10 rounded-lg">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center">
-        {promotions.map((promo, index) => (
-          <PromoCard
-            key={index}
-            image={promo.image}
-            title={promo.title}
-            description={promo.description}
-          />
-        ))}
+      {/* Right Side: CTA Button */}
+      <div className="flex justify-center md:justify-end w-full md:w-auto">
+        <a
+          href="https://wa.me/628111168127"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-[#F5C45E] text-black font-bold px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300 shadow-lg">
+            Cek Promonya
+          </button>
+        </a>
       </div>
     </div>
   );

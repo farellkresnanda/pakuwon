@@ -1,13 +1,21 @@
 "use client";
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google"
+import { Playfair_Display } from "next/font/google";
+
 import "./globals.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation"; // ⬅️ Tambahkan ini
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"], // sesuaikan kebutuhanmu
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
