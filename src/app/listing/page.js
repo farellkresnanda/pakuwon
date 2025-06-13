@@ -108,7 +108,7 @@ Berlokasi strategis di pusat Bekasi dengan koneksi tol, LRT, dan KCIC, ketiga to
           {/* Image */}
           <div className="w-full max-w-[550px]" data-aos= "fade-left">
             <Image
-              src="/tower_bella.svg"
+              src="/drone/tower_bella.jpg"
               width={1500}
               height={800}
               alt="City Night"
@@ -156,7 +156,7 @@ Berlokasi strategis di pusat Bekasi dengan koneksi tol, LRT, dan KCIC, ketiga to
           {/* Image */}
           <div className="w-full max-w-[550px]" data-aos= "fade-left">
             <Image
-              src="/tower_dolce.svg"
+              src="/drone/tower_dolce.jpg"
               width={1500}
               height={800}
               alt="City Night"

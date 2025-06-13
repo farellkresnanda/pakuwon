@@ -15,7 +15,7 @@ export default function PromoCardLandscape() {
         <p className="text-md md:text-lg font-medium text-white">Sampai Dengan</p>
 
         <h2 className="text-[42px] md:text-[56px] font-extrabold leading-none text-white">
-          220 <span className="font-light">JUTA</span>
+          110 <span className="font-light">JUTA</span>
         </h2>
 
         <p className="text-sm md:text-base text-white">
