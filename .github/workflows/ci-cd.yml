@@ -50,7 +50,7 @@ jobs:
             docker run -d \
               --name pakuwon-fe-dev \
               --restart unless-stopped \
-              -p 3000:3000 \
+              -p ${{ secrets.PORT }}:3000 \
               kresnandaf/pakuwon-fe-dev:latest
 
             echo "✅ Deployment completed!"
