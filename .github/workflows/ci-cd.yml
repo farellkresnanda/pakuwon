@@ -54,6 +54,8 @@ jobs:
               -p "${{ secrets.PORT }}":3000 \
               kresnandaf/pakuwon-fe-dev:latest
 
+            docker exec -it pakuwon-fe-dev npm run build
+
             echo "🧹 Cleaning up unused Docker resources..."
             docker system prune -f
 
