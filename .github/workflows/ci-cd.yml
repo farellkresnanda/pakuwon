@@ -50,7 +50,7 @@ jobs:
             echo "🚀 Running new container..."
             docker run -d \
               --name pakuwon-fe-dev \
-              --restart no \
+              --restart unless-stopped \
               -p "${{ secrets.PORT }}":3000 \
               kresnandaf/pakuwon-fe-dev:latest
 
