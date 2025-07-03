@@ -23,6 +23,7 @@ jobs:
         run: |
           npm ci
 
+
       - name: 🔐 Docker Login
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
@@ -40,9 +41,9 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             echo "🔁 Pulling latest Docker image..."
-            docker pull kresnandaf/pakuwon-fe-dev:latest || true
+            docker pull kresnandaf/pakuwon-fe-dev:latest
 
-            echo "🛑 Stopping and removing old container..."
+            echo "🛑 Stopping and removing old container (if exists)..."
             docker stop pakuwon-fe-dev || true
             docker rm pakuwon-fe-dev || true
 
@@ -50,7 +51,11 @@ jobs:
             docker run -d \
               --name pakuwon-fe-dev \
               --restart unless-stopped \
-              -p ${{ secrets.PORT }}:3000 \
-              kresnandaf/pakuwon-fe-dev:latest
+              -p "${{ secrets.PORT }}":3000 \
+              node:20-alpine\
+              sh -c "cd /app && npm install && npm run build && npm start"
+              
+            echo "🧹 Cleaning up unused Docker resources..."
+            docker system prune -f
 
-            echo "✅ Deployment completed!"
+            echo "✅ Deployment to Staging environment completed successfully!"
