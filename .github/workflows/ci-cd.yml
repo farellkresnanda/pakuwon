@@ -52,9 +52,8 @@ jobs:
               --name pakuwon-fe-dev \
               --restart unless-stopped \
               -p "${{ secrets.PORT }}":3000 \
-              node:20-alpine\
-              sh -c "cd /app && npm install && npm run build && npm start"
-              
+              kresnandaf/pakuwon-fe-dev:latest
+
             echo "🧹 Cleaning up unused Docker resources..."
             docker system prune -f
 
