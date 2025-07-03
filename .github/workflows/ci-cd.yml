@@ -33,24 +33,24 @@ jobs:
         run: docker push kresnandaf/pakuwon-fe-dev:latest
 
       - name: 🚢 Deploy to VPS Server
-          uses: appleboy/ssh-action@master
-          with:
-            host: ${{ secrets.HOST }}
-            username: ${{ secrets.USERNAME }}
-            key: ${{ secrets.SSH_PRIVATE_KEY }}
-            script: |
-              echo "🔁 Pulling latest Docker image..."
-              docker pull kresnandaf/pakuwon-fe-dev:latest || true
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            echo "🔁 Pulling latest Docker image..."
+            docker pull kresnandaf/pakuwon-fe-dev:latest || true
 
-              echo "🛑 Stopping and removing old container..."
-              docker stop pakuwon-fe-dev || true
-              docker rm pakuwon-fe-dev || true
+            echo "🛑 Stopping and removing old container..."
+            docker stop pakuwon-fe-dev || true
+            docker rm pakuwon-fe-dev || true
 
-              echo "🚀 Running new container..."
-              docker run -d \
-                --name pakuwon-fe-dev \
-                --restart unless-stopped \
-                -p 3000:3000 \
-                kresnandaf/pakuwon-fe-dev:latest
+            echo "🚀 Running new container..."
+            docker run -d \
+              --name pakuwon-fe-dev \
+              --restart unless-stopped \
+              -p 3000:3000 \
+              kresnandaf/pakuwon-fe-dev:latest
 
-              echo "✅ Deployment completed!"
+            echo "✅ Deployment completed!"
