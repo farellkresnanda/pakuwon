@@ -23,7 +23,6 @@ jobs:
         run: |
           npm ci
 
-
       - name: 🔐 Docker Login
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
@@ -51,12 +50,10 @@ jobs:
             docker run -d \
               --name pakuwon-fe-dev \
               --restart unless-stopped \
-              -p "${{ secrets.PORT }}":3000 \
+              -p ${{ secrets.PORT }}:3000 \
               kresnandaf/pakuwon-fe-dev:latest
-
-            docker exec -it pakuwon-fe-dev npm install -g next
 
             echo "🧹 Cleaning up unused Docker resources..."
             docker system prune -f
 
-            echo "✅ Deployment to Staging environment completed successfully!"
+            echo "✅ Deployment completed successfully!"
