@@ -34,4 +34,6 @@ COPY --from=builder /app/next.config.ts ./
 # RUN npm ci --only=production
 
 EXPOSE 3000
+EXPOSE 3001
+
 CMD ["npm", "run", "dev"]
