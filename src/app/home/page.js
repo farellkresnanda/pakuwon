@@ -2,7 +2,7 @@ import Navbar from '@/component/navbar/Navbar';
 import Image from 'next/image';
 import Carousel from '../../component/carousel/Carousel';
 import FeatureCards from '@/component/featurecard/FeatureCards';
-import Facility from '@/component/featurecard/Facility';
+import Facility from '@/component/featurecard/Facility.js';
 import PromoCards from '@/component/featurecard/PromoCards';
 import Footer from '@/component/footer/Footer';
 
