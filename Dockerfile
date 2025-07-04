@@ -25,7 +25,10 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/src ./src
 #COPY --from=builder /app/.env.local ./
 COPY --from=builder /app/next.config.ts ./
-# COPY --from=builder /app/tsconfig.json ./
+COPY --from=builder /app/tsconfig.json ./
+COPY --from=builder /app/tailwind.config.js ./
+COPY --from=builder /app/postcss.config.js ./
+COPY --from=builder /app/postcss.config.mjs ./
 # COPY --from=builder /app/tsconfig.node.json ./
 
 
